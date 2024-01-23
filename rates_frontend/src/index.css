@@ -1,0 +1,670 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  background-color: rgb(238,69,126);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =======================================================NAV BAR================================================== */
+
+
+
+/* ===============================================LOGIN FORM================================== */
+
+/* .form_header{
+  background-color: white;
+  border-bottom: 1px solid rgb(245,245,245);
+} 
+
+.form_nav{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_icon_container a{
+  display: flex;
+  align-items: center;
+  color:  rgb(238,69,126);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form_nav_icons{
+  display: flex;
+  gap: 2rem;
+}
+
+.form_nav_icons li a{
+  color: rgb(238,69,126);
+}  */
+
+
+
+
+
+.login_form_container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.login_form_container h3{
+  color: rgb(114,114,114);
+  font-size: 2rem;
+}
+
+.login_form{
+  width: 30%;
+}
+
+.login_form_container label{
+  display: block;
+  margin-bottom: 1rem;
+  color: rgb(114,114,114);
+}
+
+.login_form_container input{
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: 1px solid rgb(222,221,232);
+  border-radius: 5px;
+}
+
+.login_form_container input::placeholder{
+  color: rgb(222,221,232);
+}
+
+.password_container{
+  margin-top: 2rem;
+  position: relative;
+}
+
+.eye{
+  position: absolute;
+  font-size: 1.5rem;
+  color: rgb(222,221,232);
+  right: 20px;
+  bottom: 10px;
+}
+
+.login_form_container p{
+  margin-top: 2rem;
+  color: rgb(209,99,119);
+}
+
+.login_button{
+  margin-top: 2rem;
+}
+
+.login_button button{
+  background-color: rgb(209,99,119);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: 35px;
+  font-size: 1rem;
+}
+
+.name_container{
+  margin-bottom: 2rem;
+}
+
+/* ===============================================HOME PAGE================================== */
+.homepage{
+  background-color: rgb(248,250,253);
+  position: relative;
+}
+
+.home_top{
+  background-color: rgb(91,152,148);
+  background-image: linear-gradient(#93dbd7, rgb(91,152,148));
+  padding: 8rem 0;
+  height: 80vh;
+}
+
+.homepage .title{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4rem;
+  width: 60%;
+  color: white;
+}
+
+.homepage p{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 45%;
+  color: white;
+}
+
+.table_container_home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 0 4rem;
+  position: absolute;
+  top: 20rem;
+  /* z-index: 1; */
+}
+
+table{
+  border-radius: 20px;
+  padding: 2rem;
+  border-collapse: collapse;
+}
+
+.home_fuel_table tbody td, .home_rates_table tbody td{
+  text-align: start;
+  border-bottom: 1px solid rgb(243,243,243);
+  padding: 1rem;
+}
+
+.home_fuel_table thead tr th, .home_rates_table thead tr th{
+  text-align: start;
+  padding-left: 1rem;
+  border-bottom: 1px solid rgb(243,243,243);
+  border-top: 1px solid rgb(243,243,243);
+  padding: 1rem;
+}
+
+.table_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 2rem 1rem;
+}
+/* 
+caption span{
+  display: block;
+} */
+
+.see_more{
+  font-size: 1rem;
+  color: rgb(209,99,119);
+  text-decoration: underline;
+}
+
+.home_rates_table, .home_fuel_table{
+  width: 100%;
+  background-color: white;
+}
+
+.homepage_mid_section{
+  padding: 19rem 1rem 3rem;
+}
+
+.homepage_mid_section h2{
+  font-size: 4rem;
+  color: rgb(54,54,54);
+  text-align: center;
+}
+
+.homepage_mid_section p{
+  font-size: 1.2rem;
+  color: rgb(137,139,137);
+  text-align: center;
+}
+
+
+/* ===============================================EXCHANGE RATES PAGE================================== */
+.exchange_rates_section, .forex_bureaus_section, .remittance_section, .online_payments_section, .crypto_section, .fintechs_section, .banks_section{
+  padding: 10rem 0 6rem;
+}
+
+.exchange_rates_section h2, .forex_bureaus_section h2, .remittance_section h2, .online_payments_section h2, .crypto_section h2, .fintechs_section h2, .banks_section h2{
+  font-size: 2.4rem;
+  color: rgb(54,54,54);
+  font-weight: 500;
+  padding-left: 4rem;
+}
+
+.rates_btns_container{
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  padding-left: 4rem;
+}
+
+.rate_buttons{
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgb(216,213,242);
+  border-radius: 75px;
+  background-color: rgb(245,244,253);
+}
+
+.date_btn{
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+.date_btn button{
+  padding: 1rem;
+  border-radius: 70px;
+  border: none;
+  background-color: rgb(242, 234, 235);
+  color: rgb(209,99,119);
+  font-size: 1rem;
+}
+
+.date_btn input{
+  padding: 1.2rem 1.5rem;
+  border-radius: 60px;
+  border: none;
+  background-color: rgb(245,245,245);
+  color: rgb(129,131,129);
+  font-size: 1rem;
+}
+
+.table_container{
+  margin-top: 3rem;
+}
+
+.rates_table{
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  border-collapse: collapse;
+} 
+
+/* .rates_table thead tr th{
+  margin-bottom: 2rem;
+  color: red;
+} */
+
+.table_container .rates_table tbody tr td{
+  padding: 2rem 0;
+  text-align: left;
+  border-bottom: 1px solid rgb(243,243,243);
+  padding-left: 3rem;
+}
+
+.table_container thead tr th{
+  padding: 2rem 0;
+  text-align: left;
+  border-bottom: 1px solid rgb(243,243,243);
+  border-top: 1px solid rgb(243,243,243);
+  padding-left: 3rem;
+}
+/* ===============================================BANKS PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================FOREX BUREAUS PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================REMITTANCE PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================ONLINE PAYMENTS PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================CRYPTO PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================FINTECHS PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================FUEL PRICES PAGE================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================CONVERTER PAGE================================== */
+
+.converter_heading_section{
+  padding: 10rem 3rem 10rem;
+  background-color: rgb(149,221,210);
+  background-image: linear-gradient(#93dbd7, rgb(91,152,148));
+  color: white;
+}
+
+.converter_heading_section h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.converter_heading_section p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.converter_top{
+  position: relative;
+}
+
+.converter_top form{
+  width: 85vw;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  translate: -50% -50%;
+  margin-bottom: 10rem;
+}
+
+.converter_input_section{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.converter_input_section div:nth-of-type(1){
+  flex-basis: 50%;
+}
+
+.converter_input_section div{
+  flex-basis: 30%;
+}
+
+.converter_top form input{
+  /* border: 1px solid grey; */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+
+.converter_button_container button{
+  background-color: rgb(209,99,119);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.converter_button_container{
+  align-self: self-end;
+}
+
+
+
+
+
+
+/* ===============================================BUSINESSES PAGE================================== */
+.businesses_section{
+  background-color: rgb(244,220,224);
+  background-image: linear-gradient(#d4edec, rgb(244,220,224));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.businesses_section h1{
+  margin: 0 auto;
+  font-size: 5rem;
+  width: 60%;
+  text-align: center;
+  color: rgb(54,54,54);
+}
+
+.businesses_section p{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  line-height: 2;
+  font-size: 1.2rem;
+  color: rgb(129,129,129);
+}
+
+.businesses_section button{
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  font-size: 1.3rem;
+  background-color: rgb(209,99,119);
+  border: none;
+  border-radius: 70px;
+  color: white;
+}
+
+
+
+/* ===============================================FOOTER================================== */
+.footer_section{
+  background-color: rgb(251,251,251);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 5rem 3rem;
+}
+
+.about_section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.about_section div h5{
+  font-size: 1.2rem;
+  color: rgb(54,54,54);
+}
+
+.about_section div p{
+  margin-top: 1rem;
+}
+
+.about_section p a{
+  color: rgb(129,129,129);
+}
+
+ /* .footer_left_section{
+  width: 60%;
+} */
+
+.footer_logo a{
+  font-size: 1.5rem;
+  color: rgb(209,99,119);
+  font-weight: 600;
+}
+
+.footer_right_section{
+  justify-self: end;
+} 
+
+.footer_right_section h4{
+  color: rgb(54,54,54);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer_icons{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.footer_icons .footer_icon{
+  font-size: 2rem;
+  color: rgb(129,129,129);
+}
+
+.tfoot{
+  display: block;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+  width: 150%;
+}
+
+.tfoot span{
+  color: rgb(209,99,119);
+  font-weight: 600;
+}
+
+/* ===============================================MEDIA QUERIES================================== */
+@media screen and (max-width: 700px) {
+  .table_container_home{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    position: unset;
+    /* top: 20rem; */
+    margin: 0 auto;
+    /* z-index: 1; */
+  }
+
+  .home_top{
+    height: unset;
+  }
+
+  .homepage .title{
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .homepage p{
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .home_fuel_table{
+    width: auto;
+    background-color: antiquewhite;
+  }
+
+  .home_rates_table{
+    width: auto;
+    background-color: antiquewhite;
+  }
+
+  .menu_links{
+    display: none;
+  }
+
+  .footer_section{
+    grid-template-columns: 1fr;
+  }
+
+  .tfoot{
+    display: block;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+
+  .home_rates_table tbody td{
+    width: 30%;
+  }
+}
